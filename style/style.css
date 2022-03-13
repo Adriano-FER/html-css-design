@@ -1,0 +1,142 @@
+body{
+    background-color: hotpink;
+
+}
+
+.Recipe{
+
+}
+.Navbar{
+    display: flex;
+    align-items: baseline;
+    background-color: rgba(196, 131, 10, 0.973);
+    height: 5rem;
+    border: 2px solid black;
+}
+.Navbar .a{
+    margin-left: 2rem;
+}
+.card{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+  
+    background-color: rgba(196, 131, 10, 0.973);
+    border: 2px solid black;
+}
+.row{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+}
+.rowgrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.nw{
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas:
+    "ab ab c"
+    "d e f"
+}
+
+.firstbox{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding:1%;
+    
+}
+.firstimg{
+    width: 20%;
+}
+.contact{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+.footer{
+    background-color: rgba(196, 131, 10, 0.973);
+    position:sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}
+.RecipeBox{
+    margin: 2rem;
+    padding: 2rem;
+    background-color: rgba(196, 131, 10, 0.973);
+}
+.Recipedsc{
+    margin: 2rem;
+    padding: 2rem;
+    background-color: white;
+}
+.formsection{
+    margin: 2rem;
+    padding: 2rem;
+    background-color: rgba(196, 131, 10, 0.973);
+}
+h4{
+    text-align: center;
+}
+.userdsc{
+    max-width: 250px;
+    background-color: white;
+}
+@media only screen and (max-width: 1660px){
+    .rowgrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .nw{
+        grid-template-rows: repeat(2 1fr);
+        grid-template-areas:
+        "ab ab"
+        "c d"
+        "e f"
+    }
+    
+}
+    @media only screen and (max-width: 1050px){
+        .rowgrid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 5px;
+            grid-auto-rows: minmax(100px, auto);
+        }
+        .nw{
+            grid-template-rows: repeat(1 1fr);
+            grid-template-areas:
+            "ab"
+            "c"
+            "d"
+            "e"
+            "f"
+
+        }
+    }
+.ab{
+    grid-area: ab
+}
+.c{
+    grid-area: c
+}
+.d{
+    grid-area: d
+}
+.e{
+    grid-area: e
+}
+.f{
+    grid-area: f
+}
