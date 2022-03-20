@@ -3,9 +3,6 @@ body{
 
 }
 
-.Recipe{
-
-}
 .Navbar{
     display: flex;
     align-items: baseline;
@@ -23,8 +20,27 @@ body{
     align-items: center;
   
     background-color: rgba(196, 131, 10, 0.973);
-    border: 2px solid black;
+    border: 2px solid black; 
 }
+.anim{
+    animation: fadein 3s;
+}
+.anim2{
+    animation: fadein2 3s;
+}
+@keyframes fadein {
+    0% {position:relative; left:-100%}
+    70% {position:relative; left:0%}
+    72% {position:relative; left:-2%}
+    100% {position:relative; left:0%}
+}
+@keyframes fadein2 {
+    0% {position:relative; left:200%}
+    70% {position:relative; left:0%}
+    72% {position:relative; left:2%}
+    100% {position:relative; left:0%}
+}
+
 .row{
         display: flex;
         justify-content: space-around;
@@ -78,6 +94,9 @@ body{
     margin: 2rem;
     padding: 2rem;
     background-color: white;
+}
+.recipe:hover{
+    transform: rotate(20deg);
 }
 .formsection{
     margin: 2rem;
