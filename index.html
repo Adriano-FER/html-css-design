@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Redressed&family=Roboto+Condensed&family=Roboto+Serif:ital,wght@1,100&family=Shizuru&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <title>Recipes</title>
 </head>
 
@@ -15,91 +23,143 @@
     <main>
         <nav class="navbar Navbar navbar-expand-sm ">
             <h1><a class="contact" href="index.html">Best Recipes</a></h1>
-            <a class="navbar-brand" href="#">Logo</a>
-            
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="a" href="newest.html">Newest</a>
-              </li>
-              <li class="nav-item">
-                <a class="a" href="User.html">User</a>
-              </li>
-              <li class="nav-item">
-                <a class="a" href="Recipes.html">Recipes</a>
-              </li>
-            </ul>
-          </nav>
-        <section>
+            <a class="navbar-brand" href="#"><img class="logo" src="Logo.jpg" alt=""></a>
 
-            <div class="firstbox">
-            <h3>Dairy Recipes</h3>
-            <span>Best Recipes you can find in one place</span><br>
-            <img class="firstimg" src="This_Is_Fine.png" alt="esto está bien">
-        </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="a" href="newest.html">Newest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="a" href="User.html">User</a>
+                </li>
+                <li class="nav-item">
+                    <a class="a" href="Recipes.html">Recipes</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active ">
+                    <img src="mainimage.jpg" class="d-block w-50 mx-auto coverimg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="mainimage2.jpg" class="d-block w-50 mx-auto coverimg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="mainimage3.jpg" class="d-block w-50 mx-auto coverimg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
         </section>
         <section>
             <div class="rowgrid anim">
                 <div class="column">
                     <div class="card">
-                        <h4>Hamburguesa</h4>
-                        <img class="Recipe"  src="hamburguer.jpg" alt="hamburguesa">
-                        <span> ❤ <a class="recipe" href="Recipes.html">📖</a> 👨‍🍳</span>
+                        <h4>Hamburguesa de cordero</h4>
+                        <img class="Recipe" src="recipeimgs/receta1.jpg" alt="hamburguesa">
+                        <span> <i class="fas fa-heart"></i>
+                            <a class="text-dark" href="Recipes.html"><i class="fas fa-cookie-bite"></i></a>
+                            <i class="fas fa-user"></i></span>
+    
+                    </div>
+                </div> 
+                <div class="column">
+                    <div class="card">
+                        <h4>Pastas con salsa alfredo</h4>
+                        <img class="Recipe" src="recipeimgs/receta2.jpg" alt="pasta">
+                        <span> <i class="fas fa-heart"></i>
+                            <a class="text-dark" href="Recipes.html"><i class="fas fa-cookie-bite"></i></a>
+                            <i class="fas fa-user"></i></span>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <h4>Hamburguesa</h4>
-                        <img  class="Recipe"  src="hamburguer.jpg" alt="hamburguesa">
-                        <span> ❤ <a class="recipe" href="Recipes.html">📖</a> 👨‍🍳</span>
+                        <h4>Salchichas rellenas</h4>
+                        <img class="Recipe" src="recipeimgs/receta3.jpg" alt="salchichas">
+                        <span> <i class="fas fa-heart"></i>
+                            <a class="text-dark" href="Recipes.html"><i class="fas fa-cookie-bite"></i></a>
+                            <i class="fas fa-user"></i></span>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <h4>Hamburguesa</h4>
-                        <img class="Recipe" src="hamburguer.jpg" alt="hamburguesa">
-                        <span> ❤ <a class="recipe" href="Recipes.html">📖</a> 👨‍🍳</span>
+                        <h4>Locro</h4>
+                        <img class="Recipe" src="recipeimgs/receta4.jpg" alt="Locro">
+                        <span> <i class="fas fa-heart"></i>
+                            <a class="text-dark" href="Recipes.html"><i class="fas fa-cookie-bite"></i></a>
+                            <i class="fas fa-user"></i></span>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <h4>Hamburguesa</h4>
-                        <img class="Recipe"  src="hamburguer.jpg" alt="hamburguesa">
-                        <span> ❤ <a class="recipe" href="Recipes.html">📖</a> 👨‍🍳</span>
+                        <h4>Spaghetti a la bolognesa</h4>
+                        <img class="Recipe" src="recipeimgs/receta5.jpg" alt="spaghetti">
+                        <span> <i class="fas fa-heart"></i>
+                            <a class="text-dark" href="Recipes.html"><i class="fas fa-cookie-bite"></i></a>
+                            <i class="fas fa-user"></i></span>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <h4>Hamburguesa</h4>
-                        <img  class="Recipe"  src="hamburguer.jpg" alt="hamburguesa">
-                        <span> ❤ <a class="recipe" href="Recipes.html">📖</a> 👨‍🍳</span>
+                        <h4>Salmón rosado al horno</h4>
+                        <img class="Recipe" src="recipeimgs/receta6.jpg" alt="Salmon">
+                        <span> <i class="fas fa-heart"></i>
+                            <a class="text-dark" href="Recipes.html"><i class="fas fa-cookie-bite"></i></a>
+                            <i class="fas fa-user"></i></span>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <h4>Hamburguesa</h4>
-                        <img class="Recipe" src="hamburguer.jpg" alt="hamburguesa">
-                        <span> ❤ <a class="recipe" href="Recipes.html">📖</a> 👨‍🍳</span>
+                        <h4>batatas al hornos</h4>
+                        <img class="Recipe" src="recipeimgs/receta7.jpg" alt="batatas">
+                        <span> <i class="fas fa-heart"></i>
+                            <a class="text-dark" href="Recipes.html"><i class="fas fa-cookie-bite"></i></a>
+                            <i class="fas fa-user"></i></span>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <h4>Hamburguesa</h4>
-                        <img class="Recipe"  src="hamburguer.jpg" alt="hamburguesa">
-                        <span> ❤ <a class="recipe" href="Recipes.html">📖</a> 👨‍🍳</span>
+                        <h4>Torta Nougat</h4>
+                        <img class="Recipe" src="recipeimgs/receta8.jpg" alt="torta">
+                        <span> <i class="fas fa-heart"></i>
+                            <a class="text-dark" href="Recipes.html"><i class="fas fa-cookie-bite"></i></a>
+                            <i class="fas fa-user"></i></span>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <h4>Hamburguesa</h4>
-                        <img  class="Recipe"  src="hamburguer.jpg" alt="hamburguesa">
-                        <span> ❤ <a class="recipe" href="Recipes.html">📖</a> 👨‍🍳</span>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <h4>Hamburguesa</h4>
-                        <img class="Recipe" src="hamburguer.jpg" alt="hamburguesa">
-                        <span> ❤ <a class="recipe" href="Recipes.html">📖</a> 👨‍🍳</span>
+                        <h4>Papas con gravy</h4>
+                        <img class="Recipe" src="recipeimgs/receta9.jpg" alt="papas">
+                        <span> <i class="fas fa-heart"></i>
+                            <a class="text-dark" href="Recipes.html"><i class="fas fa-cookie-bite"></i></a>
+                            <i class="fas fa-user"></i></span>
                     </div>
                 </div>
             </div>
