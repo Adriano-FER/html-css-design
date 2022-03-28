@@ -1,0 +1,209 @@
+body{
+    background-color: hotpink;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.Navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(196, 131, 10, 0.973);
+    height: 5rem;
+    border: 2px solid black;
+    
+}
+.logo{
+    width: 10%;
+
+}
+.Navbar .a{
+    margin-left: 2rem;
+    color: black;
+    text-decoration: none;
+}
+.card{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+  
+    background-color: rgba(196, 131, 10, 0.973);
+    border: 2px solid black;
+}
+.anim{
+    animation: fadein 3s;
+}
+.anim2{
+    animation: fadein2 3s;
+}
+@keyframes fadein {
+    0% {position:relative; left:-100%}
+    70% {position:relative; left:0%}
+    72% {position:relative; left:-2%}
+    100% {position:relative; left:0%}
+}
+@keyframes fadein2 {
+    0% {position:relative; left:200%}
+    70% {position:relative; left:0%}
+    72% {position:relative; left:2%}
+    100% {position:relative; left:0%}
+}
+
+.row{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+}
+.rowgrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.nw{
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas:
+    "ab ab c"
+    "d e f"
+}
+.flex-space{
+    display: flex;
+    justify-content: space-around;
+}
+.smaller {
+width: 60%;
+}
+
+.firstbox{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding:1%;
+    
+}
+
+a{
+    font-family: 'Arial Narrow'
+}
+.contact{
+    font-family: 'Franklin Gothic Medium';
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: solid;
+    color: black;
+}
+.footer{
+    background-color: rgba(196, 131, 10, 0.973);
+    position:sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}
+.RecipeBox{
+    margin: 2rem;
+    padding: 2rem;
+    background-color: rgba(196, 131, 10, 0.973);
+    display: flex;
+    justify-content: space-evenly;
+}
+.userbox{
+    margin: 2rem;
+    padding: 2rem;
+    background-color: rgba(196, 131, 10, 0.973);
+}
+.recipedsc{
+    margin: 2rem;
+    padding: 2rem;
+    background-color: white;
+    font-family:'Roboto Condensed';
+    border: solid #000000 5px;
+}
+.Recipe{
+    max-width: 500px;
+    max-height: 300px;
+}
+.recipe:hover{
+    transform: rotate(20deg);
+}
+.formsection{
+    margin: 2rem;
+    padding: 2rem;
+    background-color: rgba(196, 131, 10, 0.973);
+}
+.recipeflexbox{
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+}
+h4{
+    text-align: center;
+}
+.userdsc{
+    font-family:'Roboto Condensed';
+    max-width: 250px;
+    background-color: white;
+    border: solid #000000 5px;
+    padding: 1rem;
+}
+
+
+@media only screen and (max-width: 1660px){
+    .rowgrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .nw{
+        grid-template-rows: repeat(2 1fr);
+        grid-template-areas:
+        "ab ab"
+        "c d"
+        "e f"
+    }
+    
+}
+    @media only screen and (max-width: 1050px){
+        .rowgrid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 5px;
+            grid-auto-rows: minmax(100px, auto);
+        }
+        .nw{
+            grid-template-rows: repeat(1 1fr);
+            grid-template-areas:
+            "ab"
+            "c"
+            "d"
+            "e"
+            "f"
+
+        }
+    }
+.ab{
+    grid-area: ab
+}
+.c{
+    grid-area: c
+}
+.d{
+    grid-area: d
+}
+.e{
+    grid-area: e
+}
+.f{
+    grid-area: f
+}
+
+i{
+    margin-left: 2rem;
+}
+
