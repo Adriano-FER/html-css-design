@@ -1,29 +1,28 @@
 body {
-  background-color: hotpink;
+  background-color: #FB6090;
   font-family: 'Lato', sans-serif;
   font-weight: bold; }
 
 .Navbar {
   display: flex;
   flex-wrap: nowrap;
-  background-color: rgba(196, 131, 10, 0.973);
+  background-color: #FFC5D0;
   height: 5rem;
   border: 2px solid black; }
+  .Navbar .a {
+    margin-left: 2rem;
+    color: black;
+    text-decoration: none; }
 
 .logo {
   width: 10%; }
-
-.Navbar .a {
-  margin-left: 2rem;
-  color: black;
-  text-decoration: none; }
 
 .card {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(196, 131, 10, 0.973);
+  background-color: #F7D6D0;
   border: 2px solid black; }
 
 .anim {
@@ -103,7 +102,7 @@ a {
   color: black; }
 
 .footer {
-  background-color: rgba(196, 131, 10, 0.973);
+  background-color: #821D30;
   position: sticky;
   left: 0;
   bottom: 0;
@@ -113,14 +112,19 @@ a {
 .RecipeBox {
   margin: 2rem;
   padding: 2rem;
-  background-color: rgba(196, 131, 10, 0.973);
+  background-color: #F7D6D0;
   display: flex;
   justify-content: space-evenly; }
 
 .userbox {
   margin: 2rem;
   padding: 2rem;
-  background-color: rgba(196, 131, 10, 0.973); }
+  background-color: #F7D6D0; }
+  .userbox .flexcolwrap {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
 
 .recipedsc {
   margin: 2rem;
@@ -139,7 +143,7 @@ a {
 .formsection {
   margin: 2rem;
   padding: 2rem;
-  background-color: rgba(196, 131, 10, 0.973); }
+  background-color: #F7D6D0; }
 
 .recipeflexbox {
   display: flex;
