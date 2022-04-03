@@ -6,7 +6,9 @@ $fondos:(
 $bgpink: map-get($fondos, bgpink);
 $alternativepink: map-get($fondos, alternativepink);
 $bground:rosadosalmon;
-
+ul{
+    list-style: none;
+}
 body{
     @if ($bground == rosadosalmon) {
         background-color: #FB6090;
