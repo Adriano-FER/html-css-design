@@ -24,6 +24,8 @@ body {
   align-items: center;
   background-color: #F7D6D0;
   border: 2px solid black; }
+  .card:hover {
+    transform: scale(1.1, 1.1); }
 
 .anim {
   animation: fadein 3s; }
@@ -59,7 +61,7 @@ body {
     position: relative;
     left: 0%; } }
 
-.row {
+.row, .userbox .flexcolwrap {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
@@ -114,17 +116,16 @@ a {
   padding: 2rem;
   background-color: #F7D6D0;
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
 
 .userbox {
   margin: 2rem;
   padding: 2rem;
   background-color: #F7D6D0; }
   .userbox .flexcolwrap {
-    display: flex;
     align-content: center;
-    flex-direction: column;
-    flex-wrap: wrap; }
+    flex-direction: column; }
 
 .recipedsc {
   margin: 2rem;
@@ -135,10 +136,8 @@ a {
 
 .Recipe {
   max-width: 500px;
-  max-height: 300px; }
-
-.recipe:hover {
-  transform: rotate(20deg); }
+  max-height: 300px;
+  transition: width 2s; }
 
 .formsection {
   margin: 2rem;

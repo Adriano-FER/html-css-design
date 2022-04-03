@@ -1,8 +1,19 @@
-$bgpink: #FFC5D0;
-$alternativepink: #F7D6D0;
+$fondos:(
+    bgpink: #FFC5D0,
+    alternativepink: #F7D6D0,
+);
+
+$bgpink: map-get($fondos, bgpink);
+$alternativepink: map-get($fondos, alternativepink);
+$bground:rosadosalmon;
 
 body{
-    background-color: #FB6090;
+    @if ($bground == rosadosalmon) {
+        background-color: #FB6090;
+    }
+    @else if ($ground == negro) {
+        background-color: #000000;
+    }
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 }
@@ -14,6 +25,7 @@ body{
     height: 5rem;
     border: 2px solid black;
     .a{
+  
         margin-left: 2rem;
         color: black;
         text-decoration: none;
@@ -31,6 +43,9 @@ body{
   
     background-color: #F7D6D0;
     border: 2px solid black;
+    &:hover{
+        transform: scale(1.1, 1.1);
+    }
 }
 .anim{
     animation: fadein 3s;
@@ -112,16 +127,16 @@ a{
     background-color: $alternativepink;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .userbox{
     margin: 2rem;
     padding: 2rem;
     background-color: $alternativepink;
     .flexcolwrap{
-        display: flex;
+        @extend .row;
         align-content: center;
         flex-direction: column;
-        flex-wrap: wrap;
     }
 }
 .recipedsc{
@@ -134,10 +149,10 @@ a{
 .Recipe{
     max-width: 500px;
     max-height: 300px;
+    transition: width 2s;
+
 }
-.recipe:hover{
-    transform: rotate(20deg);
-}
+
 .formsection{
     margin: 2rem;
     padding: 2rem;
@@ -159,14 +174,18 @@ h4{
     border: solid #000000 5px;
     padding: 1rem;
 }
-
+@mixin rowgrid($grid){
+    display: grid;
+    grid-template-columns: $grid;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+}
+$grid1660: repeat(2, 1fr);
+$grid1050: repeat(1, 1fr);
 
 @media only screen and (max-width: 1660px){
     .rowgrid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 5px;
-        grid-auto-rows: minmax(100px, auto);
+        @include rowgrid($grid1660)
     }
     .nw{
         grid-template-rows: repeat(2 1fr);
@@ -179,10 +198,7 @@ h4{
 }
     @media only screen and (max-width: 1050px){
         .rowgrid{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 5px;
-            grid-auto-rows: minmax(100px, auto);
+            @include rowgrid($grid1050)
         }
         .nw{
             grid-template-rows: repeat(1 1fr);
