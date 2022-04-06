@@ -1,3 +1,6 @@
+ul {
+  list-style: none; }
+
 body {
   background-color: #FB6090;
   font-family: 'Lato', sans-serif;
@@ -24,8 +27,6 @@ body {
   align-items: center;
   background-color: #F7D6D0;
   border: 2px solid black; }
-  .card:hover {
-    transform: scale(1.1, 1.1); }
 
 .anim {
   animation: fadein 3s; }
@@ -127,6 +128,10 @@ a {
     align-content: center;
     flex-direction: column; }
 
+.coverimg {
+  max-height: 500px;
+  width: auto; }
+
 .recipedsc {
   margin: 2rem;
   padding: 2rem;
@@ -138,6 +143,9 @@ a {
   max-width: 500px;
   max-height: 300px;
   transition: width 2s; }
+  .Recipe:hover {
+    transform: scale(1.1, 1.1);
+    transition: 1s; }
 
 .formsection {
   margin: 2rem;

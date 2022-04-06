@@ -45,9 +45,7 @@ body{
   
     background-color: #F7D6D0;
     border: 2px solid black;
-    &:hover{
-        transform: scale(1.1, 1.1);
-    }
+   
 }
 .anim{
     animation: fadein 3s;
@@ -141,6 +139,11 @@ a{
         flex-direction: column;
     }
 }
+.coverimg{
+    max-height: 500px;
+
+    width: auto;
+}
 .recipedsc{
     margin: 2rem;
     padding: 2rem;
@@ -152,6 +155,10 @@ a{
     max-width: 500px;
     max-height: 300px;
     transition: width 2s;
+    &:hover{
+        transform: scale(1.1, 1.1);
+        transition: 1s;
+    }
 
 }
 
