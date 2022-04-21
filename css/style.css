@@ -106,11 +106,11 @@ a {
 
 .footer {
   background-color: #821D30;
-  position: sticky;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 10%; }
+  height: 150px;
+  padding: 10px; }
 
 .RecipeBox {
   margin: 2rem;
@@ -137,7 +137,13 @@ a {
   padding: 2rem;
   background-color: white;
   font-family: 'Roboto Condensed';
-  border: solid #000000 5px; }
+  border: solid #2c2c2c 1px; }
+
+.chef {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px; }
 
 .Recipe {
   max-width: 500px;
@@ -165,7 +171,7 @@ h4 {
   font-family: 'Roboto Condensed';
   max-width: 250px;
   background-color: white;
-  border: solid #000000 5px;
+  border: solid #2c2c2c 1px;
   padding: 1rem; }
 
 @media only screen and (max-width: 1660px) {
@@ -205,3 +211,6 @@ h4 {
 
 i {
   margin-left: 2rem; }
+
+.full_width {
+  width: 100%; }
